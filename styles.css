@@ -1,0 +1,97 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #111111;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.55;
+}
+
+.page {
+  width: min(920px, 92vw);
+  margin: 28px auto 48px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+p {
+  margin: 0 0 12px;
+}
+
+.affiliation,
+.contact {
+  margin-top: 4px;
+  color: #333333;
+}
+
+section {
+  margin-top: 24px;
+}
+
+ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+li {
+  margin: 6px 0;
+}
+
+a {
+  color: #0046ad;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration: underline;
+}
+
+.portrait {
+  float: right;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  margin: 4px 0 10px 20px;
+  border: 1px solid #bbbbbb;
+}
+
+.pub-list li {
+  margin: 10px 0;
+}
+
+footer {
+  margin-top: 28px;
+  border-top: 1px solid #d9d9d9;
+  padding-top: 10px;
+  color: #555555;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 680px) {
+  .page {
+    width: 94vw;
+    margin-top: 20px;
+  }
+
+  .portrait {
+    float: none;
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin: 0 0 12px;
+  }
+}
