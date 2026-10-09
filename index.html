@@ -1,101 +1,152 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Xueru Wen | Personal Homepage</title>
-    <meta
-      name="description"
-      content="Xueru Wen - NLP, Alignment, and Large Language Model research at UCAS."
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main class="page">
-      <header>
-        <h1>Xueru Wen</h1>
-        <p class="affiliation">
-          School of Computer Science and Technology, University of Chinese Academy of Sciences
-        </p>
-        <p class="contact">
-          Email: xueru.wen [at] iscas.ac.cn
-        </p>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Xueru Wen (温学儒), Ph.D. student at UCAS and ISCAS. Research on LLM post-training, reward modeling, reinforcement learning, and recursive self-improving agents." />
+  <title>Xueru Wen | 温学儒</title>
+  <link rel="stylesheet" href="styles.css?v=6" />
+</head>
+<body>
+<a class="skip-link" href="#biography">Skip to content</a>
+<main class="page">
+  <header id="top">
+    <p class="eyebrow">Profile <span>UCAS · ISCAS</span></p>
+    <div class="profile">
+      <img class="portrait" src="assets/portrait.jpg?v=2" width="241" height="256" alt="Portrait of Xueru Wen" />
+      <div>
+        <h1>Xueru Wen <span class="chinese-name" lang="zh-CN">温学儒</span></h1>
+        <p class="role">Ph.D. student in Computer Application Technology</p>
+        <p><a href="https://www.ucas.ac.cn/">University of Chinese Academy of Sciences</a></p>
+        <p><a href="https://www.icip.org.cn/zh/homepage/">Chinese Information Processing Laboratory</a></p>
+        <p>Institute of Software, Chinese Academy of Sciences</p>
+        <p>Advisor: Prof. <a href="https://people.ucas.edu.cn/~benhe">Ben He</a></p>
+        <p>Email: <a href="mailto:wenxueru2022@iscas.ac.cn">wenxueru2022@iscas.ac.cn</a></p>
+        <div class="profile-links" aria-label="Profile and CV links">
+          <a href="https://scholar.google.com/citations?user=MGhwXeUAAAAJ&amp;hl=en">Google Scholar</a>
+          <a href="https://github.com/wenxueru">GitHub</a>
+          <a href="assets/resume.pdf?v=20261009-cv8">CV</a>
+          <a href="assets/resume-zh_CN.pdf?v=20261009-cv8" lang="zh-CN">中文简历</a>
+        </div>
+      </div>
+    </div>
+    <nav class="navigation" aria-label="Sections">
+      <a href="#biography">Biography</a><a href="#research">Research</a><a href="#experience">Experience</a>
+      <a href="#publications">Publications</a><a href="#projects">Tools</a><a href="#honors">Honors</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-      <section>
-        <h2>Short Bio</h2>
-        <img
-          class="portrait"
-          src="https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=MGhwXeUAAAAJ&citpid=1"
-          alt="Portrait of Xueru Wen"
-        />
-        <p>
-          I am a researcher in Natural Language Processing. My current work focuses on large language models,
-          alignment, and reliable post-training, including reward modeling and hallucination mitigation.
-        </p>
-        <p>
-          I am interested in building practical and trustworthy language systems with stronger reasoning ability.
-        </p>
-      </section>
+  <section id="biography" aria-labelledby="biography-title">
+    <h2 id="biography-title">Biography</h2>
+    <p>I am a Ph.D. student at the University of Chinese Academy of Sciences (UCAS), advised by Prof. <a href="https://people.ucas.edu.cn/~benhe">Ben He</a>. I conduct research in the <a href="https://www.icip.org.cn/zh/homepage/">Chinese Information Processing Laboratory</a> at the Institute of Software, Chinese Academy of Sciences (ISCAS). I expect to graduate in 2028.</p>
+    <p>I received my B.S. degree from <a href="https://www.jlu.edu.cn/">Jilin University</a> in 2023, where I was in the Tang Aoqing Honors Program in Science, Computer Science Track. Since September 2023, I have been interning at Xiaohongshu (RedNote), and became an Ace Top Intern in July 2025.</p>
+  </section>
 
-      <section>
-        <h2>Links</h2>
-        <ul>
-          <li><a href="https://scholar.google.com/citations?user=MGhwXeUAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a></li>
-          <li><a href="https://github.com/wenxueru" target="_blank" rel="noreferrer">GitHub</a></li>
-        </ul>
-      </section>
+  <section id="research" aria-labelledby="research-title">
+    <h2 id="research-title">Research Interests</h2>
+    <p>My research focuses on <strong>LLM post-training, particularly reward modeling, agents, and recursive self-improvement (RSI)</strong>. I study how reliable reward signals and reinforcement learning improve agent reasoning and tool use. For RSI, I explore how agents can automate data generation, evaluation, and training to support iterative self-improvement. As models become more capable, I am interested in scalable oversight that keeps this process reliable and aligned.</p>
+  </section>
 
-      <section>
-        <h2>Research Interests</h2>
-        <ul>
-          <li>Natural Language Processing</li>
-          <li>Alignment</li>
-          <li>Large Language Models</li>
-        </ul>
-      </section>
+  <section id="experience" aria-labelledby="experience-title">
+    <h2 id="experience-title">Internship &amp; Project Experience</h2>
+    <article class="experience">
+      <div class="experience-title"><strong>Xiaohongshu (RedNote)</strong><span class="date">Sep. 2023 – Present</span></div>
+      <p>Ace Top Intern since July 2025. LLM post-training, with a focus on reward modeling, agent and recursive self-improving systems.</p>
+      <ul>
+        <li><strong>Reward model iteration.</strong> Iterated RLHF reward models with preference feedback, hallucination detection, and process rewards; evaluated downstream effects and explored scalable oversight mechanisms.</li>
+        <li><strong>Math Verification Agent.</strong> Built an agent with Lean, Python, and natural-language verifiers, then strengthened it with SFT and agentic RL to improve ProofBench performance.</li>
+        <li><strong>SWE Coding Agent.</strong> Built Docker/Kubernetes sampling pipelines for large-scale trajectory collection and validation; used SFT to evaluate data effectiveness. Implemented TITO, R3, and partial rollout for agentic RL, improving SWE-bench Verified, Multilingual, and Pro performance.</li>
+        <li><strong>Automated Posttrain.</strong> Built large-scale data synthesis pipelines on cloud GPU clusters, used world models for targeted synthesis, and implemented segment-wise tokenization for training and inference to improve PostTrainBench performance.</li>
+      </ul>
+    </article>
+    <article class="experience">
+      <div class="experience-title"><strong>Chinese Information Processing Laboratory, ISCAS</strong><span class="date">Mar. 2023 – Aug. 2023</span></div>
+      <p>Worked on LLM pre-training with Megatron–DeepSpeed, including LLaMA training support, checkpoint conversion, numerical alignment, fused kernels, and Flash Attention.</p>
+    </article>
+  </section>
 
-      <section>
-        <h2>Google Scholar Metrics</h2>
-        <ul>
-          <li>Citations: 101 (Since 2021: 101)</li>
-          <li>h-index: 6 (Since 2021: 6)</li>
-          <li>i10-index: 3 (Since 2021: 3)</li>
-        </ul>
-      </section>
+  <section id="publications" aria-labelledby="publications-title">
+    <h2 id="publications-title">Publications</h2>
+    <p class="section-note">My name is in bold. <a href="assets/publications.bib" download>BibTeX</a> · <a href="https://scholar.google.com/citations?user=MGhwXeUAAAAJ&amp;hl=en">Google Scholar</a></p>
+    <ol class="publications">
+<li><a class="paper-title" href="https://arxiv.org/abs/2512.12576">Coupled Variational Reinforcement Learning for Language Model General Reasoning</a>
+      <span class="paper-links"><a href="https://arxiv.org/abs/2512.12576">Paper</a> <a href="https://github.com/wenxueru/CoVRL">Code</a></span>
+      <div class="authors"><strong>Xueru Wen</strong>, Jie Lou, Yanjiang Liu, Hongyu Lin, Ben He, Xianpei Han, Le Sun, Yaojie Lu, Debing Zhang.</div><div class="venue">ICML 2026.</div></li>
+<li><a class="paper-title" href="https://arxiv.org/abs/2603.09117">Decoupling Reasoning and Confidence: Resurrecting Calibration in Reinforcement Learning from Verifiable Rewards</a>
+      <span class="paper-links"><a href="https://arxiv.org/abs/2603.09117">Paper</a></span>
+      <div class="authors">Zhengzhao Ma, <strong>Xueru Wen</strong>, Boxi Cao, Yaojie Lu, Hongyu Lin, Jinglin Yang, Min He, Xianpei Han, Le Sun.</div><div class="venue">ICML 2026.</div></li>
+<li><a class="paper-title" href="https://arxiv.org/abs/2605.14539">Learning from Failures: Correction-Oriented Policy Optimization with Verifiable Rewards</a>
+      <span class="paper-links"><a href="https://arxiv.org/abs/2605.14539">Paper</a></span>
+      <div class="authors">Mengjie Ren, Jie Lou, Boxi Cao, <strong>Xueru Wen</strong>, Hongyu Lin, Xianpei Han, Le Sun, Xing Yu, Yaojie Lu.</div><div class="venue">COLM 2026.</div></li>
+<li><a class="paper-title" href="https://openreview.net/forum?id=Cnwz9jONi5">Rethinking Reward Model Evaluation: Are We Barking up the Wrong Tree?</a>
+      <span class="paper-links"><a href="https://openreview.net/forum?id=Cnwz9jONi5">Paper</a></span>
+      <div class="authors"><strong>Xueru Wen</strong>, Jie Lou, Yaojie Lu, Hongyu Lin, Xing Yu, Xinyu Lu, Ben He, Xianpei Han, Debing Zhang, Le Sun.</div><div class="venue">ICLR 2025 <span class="spotlight">Spotlight</span></div></li>
+<li><a class="paper-title" href="https://aclanthology.org/2025.acl-long.737/">Cheems: A Practical Guidance for Building and Evaluating Chinese Reward Models from Scratch</a>
+      <span class="paper-links"><a href="https://aclanthology.org/2025.acl-long.737/">Paper</a> <a href="https://github.com/AlignRM/CheemsRM">Code</a></span>
+      <div class="authors"><strong>Xueru Wen</strong>, Jie Lou, Zichao Li, Yaojie Lu, Xing Yu, Yuqiu Ji, Guohai Xu, Hongyu Lin, Ben He, Xianpei Han, Le Sun, Debing Zhang.</div><div class="venue">ACL 2025.</div></li>
+<li><a class="paper-title" href="https://aclanthology.org/2025.findings-acl.271/">On-Policy Self-Alignment with Fine-grained Knowledge Feedback for Hallucination Mitigation</a>
+      <span class="paper-links"><a href="https://aclanthology.org/2025.findings-acl.271/">Paper</a></span>
+      <div class="authors"><strong>Xueru Wen</strong>, Jie Lou, Xinyu Lu, Yuqiu Ji, Xinyan Guan, Yaojie Lu, Hongyu Lin, Ben He, Xianpei Han, Debing Zhang, Le Sun.</div><div class="venue">ACL 2025.</div></li>
+<li><a class="paper-title" href="https://aclanthology.org/2025.naacl-long.227/">Transferable Post-training via Inverse Value Learning</a>
+      <span class="paper-links"><a href="https://aclanthology.org/2025.naacl-long.227/">Paper</a></span>
+      <div class="authors">Xinyu Lu, <strong>Xueru Wen</strong>, Yaojie Lu, Bowen Yu, Hongyu Lin, Haiyang Yu, Le Sun, Xianpei Han, Yongbin Li.</div><div class="venue">NAACL 2025.</div></li>
+<li><a class="paper-title" href="https://aclanthology.org/2025.acl-demo.19/">AutoAlign: Get Your LLM Aligned with Minimal Annotations</a>
+      <span class="paper-links"><a href="https://aclanthology.org/2025.acl-demo.19/">Paper</a></span>
+      <div class="authors">Xinyu Lu, Dong Xu, Chunkang Zhang, Xinyan Guan, Junxiang Wang, Qingyu Zhang, Pengbo Wang, Yingzhi Mao, Hao Xiang, <strong>Xueru Wen</strong>, Zichao Li, Yaojie Lu, Hongyu Lin, Le Sun, Xianpei Han.</div><div class="venue">ACL 2025.</div></li>
+<li><a class="paper-title" href="https://aclanthology.org/2025.findings-acl.89/">Critic-CoT: Boosting the Reasoning Abilities of Large Language Model via Chain-of-Thought Critic</a>
+      <span class="paper-links"><a href="https://aclanthology.org/2025.findings-acl.89/">Paper</a></span>
+      <div class="authors">Xin Zheng, Jie Lou, Boxi Cao, <strong>Xueru Wen</strong>, Yuqiu Ji, Hongyu Lin, Yaojie Lu, Xianpei Han, Debing Zhang, Le Sun.</div><div class="venue">ACL 2025.</div></li>
+<li><a class="paper-title" href="https://proceedings.mlr.press/v267/li25cw.html">The Devil Is in the Details: Tackling Unimodal Spurious Correlations for Generalizable Multimodal Reward Models</a>
+      <span class="paper-links"><a href="https://proceedings.mlr.press/v267/li25cw.html">Paper</a> <a href="https://github.com/alignrm/Generalizable-MM-RM">Code</a></span>
+      <div class="authors">Zichao Li, <strong>Xueru Wen</strong>, Jie Lou, Yuqiu Ji, Yaojie Lu, Xianpei Han, Debing Zhang, Le Sun.</div><div class="venue">ICML 2025.</div></li>
+<li><a class="paper-title" href="https://doi.org/10.1145/3539618.3592028">Offline Pseudo Relevance Feedback for Efficient and Effective Single-Pass Dense Retrieval</a>
+      <span class="paper-links"><a href="https://doi.org/10.1145/3539618.3592028">Paper</a></span>
+      <div class="authors"><strong>Xueru Wen</strong>, Xiaoyang Chen, Xuanang Chen, Ben He, Le Sun.</div><div class="venue">SIGIR 2023.</div></li>
+<li><a class="paper-title" href="https://doi.org/10.1007/s11063-023-11201-8">End-to-End Entity Detection with Proposer and Regressor</a>
+      <span class="paper-links"><a href="https://doi.org/10.1007/s11063-023-11201-8">Paper</a></span>
+      <div class="authors"><strong>Xueru Wen</strong>, Changjiang Zhou, Haotian Tang, Luguang Liang, Hong Qi, Yu Jiang.</div><div class="venue">Neural Processing Letters 2023.</div></li>
+<li><a class="paper-title" href="https://arxiv.org/abs/2210.10240">Type-supervised Sequence Labeling Based on the Heterogeneous Star Graph for Named Entity Recognition</a>
+      <span class="paper-links"><a href="https://arxiv.org/abs/2210.10240">Paper</a></span>
+      <div class="authors"><strong>Xueru Wen</strong>, Changjiang Zhou, Haotian Tang, Luguang Liang, Yu Jiang, Hong Qi.</div><div class="venue">arXiv, 2022.</div></li>
+    </ol>
+  </section>
 
-      <section>
-        <h2>Selected Publications</h2>
-        <ul class="pub-list">
-          <li>
-            Critic-cot: Boosting the reasoning abilities of large language model via chain-of-thought critic.
-            Findings of ACL 2025. [Cited by 35]
-          </li>
-          <li>
-            Rethinking reward model evaluation: Are we barking up the wrong tree?.
-            arXiv:2410.05584, 2024. [Cited by 24]
-          </li>
-          <li>
-            The devil is in the details: Tackling unimodal spurious correlations for generalizable multimodal reward models.
-            arXiv:2503.03122, 2025. [Cited by 11]
-          </li>
-          <li>
-            On-policy fine-grained knowledge feedback for hallucination mitigation. 2024. [Cited by 8]
-          </li>
-          <li>
-            End-to-end entity detection with proposer and regressor.
-            Neural Processing Letters, 2023. [Cited by 7]
-          </li>
-          <li>
-            Offline pseudo relevance feedback for efficient and effective single-pass dense retrieval.
-            ACM SIGIR, 2023. [Cited by 7]
-          </li>
-        </ul>
-      </section>
+  <section id="projects" aria-labelledby="projects-title">
+    <h2 id="projects-title">Tools &amp; Resources</h2>
+    <p class="tools-intro">A few small tools I’ve developed that you might find useful. Feel free to have your agent give them a try.</p>
+    <div class="projects-grid">
+      <article class="project">
+        <h3><a href="https://github.com/wenxueru/skynet">Skynet <span aria-hidden="true">↗</span></a></h3>
+        <p>A native macOS workspace for Codex and Claude Code, bringing together local and SSH sessions, queued follow-ups, and code review.</p>
+      </article>
+      <article class="project">
+        <h3><a href="https://github.com/wenxueru/python-hot-patch-skill">Python Hot Patch Skill <span aria-hidden="true">↗</span></a></h3>
+        <p>An agent skill for hot-patching live CPython processes while preserving in-memory state, with safe-point execution and independent verification.</p>
+      </article>
+      <article class="project">
+        <h3><a href="https://github.com/wenxueru/wait-skill">Wait Skill <span aria-hidden="true">↗</span></a></h3>
+        <p>Event-driven waiting and task coordination for coding agents, supporting passive monitoring, timed loops, and workflows organized by task dependencies.</p>
+      </article>
+      <article class="project">
+        <h3><a href="https://github.com/wenxueru/jsonline-viewer">JSONLine Viewer <span aria-hidden="true">↗</span></a></h3>
+        <p>A VS Code extension for inspecting JSONL and NDJSON records, with formatted JSON previews and indexed navigation through large files.</p>
+      </article>
+    </div>
+  </section>
 
-      <footer>
-        <p>Last updated: March 16, 2026</p>
-      </footer>
-    </main>
-  </body>
+  <section id="honors" aria-labelledby="honors-title">
+    <h2 id="honors-title">Awards &amp; Honors</h2>
+    <ul>
+      <li><span lang="zh-CN">中国科学院大学院长奖奖学金优秀奖</span>, Aug. 2026 <span class="section-note">(Chinese Academy of Sciences system)</span></li>
+      <li>CAST Young Talent Support Program, Doctoral Student Special Track, 2025.</li>
+    </ul>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title">Contact</h2>
+    <p>Email: <a href="mailto:wenxueru2022@iscas.ac.cn">wenxueru2022@iscas.ac.cn</a><br />Chinese Information Processing Laboratory<br />Institute of Software, Chinese Academy of Sciences, Beijing, China</p>
+  </section>
+  <footer><p>Last updated: <time datetime="2026-10-09">October 9, 2026</time>.</p><a href="#top">Back to top ↑</a></footer>
+</main>
+</body>
 </html>
