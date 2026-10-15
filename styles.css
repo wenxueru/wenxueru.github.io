@@ -176,3 +176,22 @@ footer p { margin: 0; }
   .profile-links a, .paper-links a { border: 0; padding: 0; }
   a { color: inherit; }
 }
+
+/* Shared language navigation; English remains the default document. */
+.header-topline { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-bottom: 30px; }
+.header-topline .eyebrow { display: block; margin: 0; }
+.header-topline .eyebrow span { margin-left: 16px; }
+.language-switch { display: flex; align-items: center; flex-shrink: 0; gap: 9px; font-size: 12px; line-height: 1.8; }
+.language-switch a { color: var(--muted); padding: 3px 0; }
+.language-switch a[aria-current="page"] { color: var(--accent); font-weight: 600; }
+.language-switch span { color: #c3c9cf; }
+html[lang="zh-CN"] #biography p, html[lang="zh-CN"] #research p { max-width: none; }
+html[lang="zh-CN"] h2 { font-family: "Songti SC", SimSun, var(--serif); letter-spacing: .5px; }
+@media (max-width: 540px) {
+  .header-topline { gap: 10px; margin-bottom: 23px; }
+  .header-topline .eyebrow { letter-spacing: 1px; }
+  .header-topline .eyebrow span { margin-left: 8px; letter-spacing: .5px; }
+  .language-switch { font-size: 12px; gap: 7px; }
+  html[lang="zh-CN"] .chinese-name { font-size: 21px; letter-spacing: 0; }
+}
+@media print { .language-switch { display: none; } }
