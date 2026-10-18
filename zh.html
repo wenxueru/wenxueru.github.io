@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="温学儒，中国科学院大学博士研究生，在中国科学院软件研究所中文信息处理实验室开展研究。研究方向为大语言模型后训练、奖励建模、agent 与递归自我改进。" />
+  <meta name="description" content="温学儒，中国科学院大学博士研究生，在中国科学院软件研究所中文信息处理实验室开展研究。研究方向为大语言模型后训练、奖励建模、Agent 与递归自我改进。" />
   <title>温学儒 | Xueru Wen</title>
   <link rel="canonical" href="https://wenxueru.github.io/zh.html" />
   <link rel="alternate" hreflang="en" href="https://wenxueru.github.io/" />
@@ -36,8 +36,8 @@
         <div class="profile-links" aria-label="学术主页与简历">
           <a href="https://scholar.google.com/citations?user=MGhwXeUAAAAJ&amp;hl=en">Google Scholar</a>
           <a href="https://github.com/wenxueru">GitHub</a>
-          <a href="assets/resume.pdf?v=20261009-cv8">英文简历</a>
-          <a href="assets/resume-zh_CN.pdf?v=20261009-cv8" lang="zh-CN">中文简历</a>
+          <a href="assets/resume.pdf?v=20261018-facts1">英文简历</a>
+          <a href="assets/resume-zh_CN.pdf?v=20261018-facts1" lang="zh-CN">中文简历</a>
         </div>
       </div>
     </div>
@@ -55,18 +55,18 @@
 
   <section id="research" aria-labelledby="research-title">
     <h2 id="research-title">研究方向</h2>
-    <p>我的研究聚焦<strong>大语言模型后训练，重点包括奖励建模、agent 与递归自我改进（RSI）</strong>。我关注如何通过可靠的奖励信号与强化学习，提升 agent 的推理和工具使用能力；在 RSI 方向，探索由 agent 自动完成数据生成、评估与训练，支持模型能力的持续迭代。随着模型能力增强，我也关注如何通过可扩展监督，使这一过程保持可靠与对齐。</p>
+    <p>我的研究聚焦<strong>大语言模型后训练，重点包括奖励建模、Agent 与递归自我改进（RSI）</strong>。我关注如何通过可靠的奖励信号与强化学习，提升 Agent 的推理和工具使用能力；在 RSI 方向，探索由 Agent 自动完成数据生成、评估与训练，支持模型能力的持续迭代。随着模型能力增强，我也关注如何通过可扩展监督，使这一过程保持可靠与对齐。</p>
   </section>
 
   <section id="experience" aria-labelledby="experience-title">
     <h2 id="experience-title">研究与实践</h2>
     <article class="experience">
       <div class="experience-title"><strong>小红书</strong><span class="date">2023年9月 — 至今</span></div>
-      <p>2025年7月起为 Ace 顶尖实习生。围绕大模型后训练，开展奖励建模、agent 与递归自我改进系统相关工作。</p>
+      <p>2025年7月起为 Ace 顶尖实习生。围绕大模型后训练，开展奖励建模、Agent 与递归自我改进系统相关工作。</p>
       <ul>
         <li><strong>奖励模型迭代。</strong>结合偏好反馈、幻觉检测与过程奖励迭代 RLHF 奖励模型，评估下游效果，并探索可扩展监督机制。</li>
-        <li><strong>Math Verification Agent。</strong>先基于 Lean、Python 与自然语言验证器构建 agent，再通过 SFT 与 agentic RL 增强验证能力，提升 ProofBench 表现。</li>
-        <li><strong>SWE Coding Agent。</strong>搭建 Docker/Kubernetes 采样链路，实现大规模轨迹获取与验证，通过 SFT 检验数据效果；实现 TITO、R3 与 partial rollout，支持 agentic RL，提升 SWE-bench Verified、Multilingual 与 Pro 表现。</li>
+        <li><strong>Math Verification Agent。</strong>先基于 Lean、Python 与自然语言验证器构建 Agent，再通过 SFT 与 Agentic RL 增强验证能力，提升 ProofBench 表现。</li>
+        <li><strong>SWE Coding Agent。</strong>搭建 Docker/Kubernetes 采样链路，实现大规模轨迹获取与验证，通过 SFT 检验数据效果；实现 TITO、R3 与 partial rollout，支持 Agentic RL，提升 SWE-bench Verified、Multilingual 与 Pro 表现。</li>
         <li><strong>Automated Posttrain。</strong>在云端 GPU 集群上构建大规模数据合成链路，利用 world model 定向合成，并在训练与推理侧实现分段 tokenization，提升 PostTrainBench 表现。</li>
       </ul>
     </article>
@@ -127,7 +127,7 @@
 
   <section id="projects" aria-labelledby="projects-title">
     <h2 id="projects-title">工具与资源</h2>
-    <p class="tools-intro">一些我开发的、你可能觉得有用的小工具，欢迎让你的 agent 试一试。</p>
+    <p class="tools-intro">一些我开发的、你可能觉得有用的小工具，欢迎让你的 Agent 试一试。</p>
     <div class="projects-grid">
       <article class="project">
         <h3><a href="https://github.com/wenxueru/skynet">Skynet <span aria-hidden="true">↗</span></a></h3>
@@ -135,11 +135,11 @@
       </article>
       <article class="project">
         <h3><a href="https://github.com/wenxueru/python-hot-patch-skill">Python Hot Patch Skill <span aria-hidden="true">↗</span></a></h3>
-        <p>支持对运行中的 CPython 进程进行热补丁的 agent skill，保留内存状态，并提供安全点执行与独立验证。</p>
+        <p>支持对运行中的 CPython 进程进行热补丁的 Agent Skill，保留内存状态，并提供安全点执行与独立验证。</p>
       </article>
       <article class="project">
         <h3><a href="https://github.com/wenxueru/wait-skill">Wait Skill <span aria-hidden="true">↗</span></a></h3>
-        <p>面向 coding agent 的事件驱动等待与任务协调工具，支持被动监控、定时循环及按任务依赖组织的工作流。</p>
+        <p>面向 Coding Agent 的事件驱动等待与任务协调工具，支持被动监控、定时循环及按任务依赖组织的工作流。</p>
       </article>
       <article class="project">
         <h3><a href="https://github.com/wenxueru/jsonline-viewer">JSONLine Viewer <span aria-hidden="true">↗</span></a></h3>
@@ -151,7 +151,7 @@
   <section id="honors" aria-labelledby="honors-title">
     <h2 id="honors-title">荣誉奖励</h2>
     <ul>
-      <li><span lang="zh-CN">中国科学院大学院长奖奖学金优秀奖</span>，2026年8月 <span class="section-note">（中国科学院系统）</span></li>
+      <li><span lang="zh-CN">中国科学院院长优秀奖</span>，2026年8月 <span class="section-note">（中国科学院系统）</span></li>
       <li>中国科协青年科技人才培育工程博士生专项计划入选者，2025年。</li>
     </ul>
   </section>
@@ -160,7 +160,7 @@
     <h2 id="contact-title">联系方式</h2>
     <p>邮箱：<a href="mailto:wenxueru2022@iscas.ac.cn">wenxueru2022@iscas.ac.cn</a><br />中国科学院软件研究所 · 中文信息处理实验室<br />中国 · 北京</p>
   </section>
-  <footer><p>最近更新：<time datetime="2026-10-15">2026年10月15日</time>。</p><a href="#top">返回顶部 ↑</a></footer>
+  <footer><p>最近更新：<time datetime="2026-10-18">2026年10月18日</time>。</p><a href="#top">返回顶部 ↑</a></footer>
 </main>
 </body>
 </html>
